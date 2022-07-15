@@ -11,19 +11,29 @@ public class PlayerMovement : MonoBehaviour
     public Tilemap blockedGrid;
 
     private Vector2? movementDirection;
+
+    private bool isButtonDown = false;
     // Update is called once per frame
     void Update()
     {
-        if (movementDirection == null)
-            return; // limit movement to one at a time
         // input gather
-        float horizontalMovement = Input.GetAxis("Horizontal");
-        float verticalMovement = Input.GetAxis("Vertical");
+        float horizontalMovement = Input.GetAxisRaw("Horizontal");
+        float verticalMovement = Input.GetAxisRaw("Vertical");
 
-        if (horizontalMovement != 0)
+
+        if (horizontalMovement != 0 && !isButtonDown)
+        {
             movementDirection = new Vector2(horizontalMovement, 0);
-        else if (verticalMovement != 0)
+            isButtonDown = true;
+        }
+        else if (verticalMovement != 0 && !isButtonDown)
+        {
             movementDirection = new Vector2(0, verticalMovement);
+            isButtonDown = true;
+        }
+            
+        if (horizontalMovement == 0 && verticalMovement == 0)
+            isButtonDown = false;
     }
 
     private void FixedUpdate()
