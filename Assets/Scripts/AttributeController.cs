@@ -9,12 +9,6 @@ public class AttributController : MonoBehaviour
     [SerializeField]
     private int _hitDamage;
 
-    public AttributController(int health, int hitDamage)
-    {
-        _health = health;
-        _hitDamage = hitDamage;
-    }
-
     void GetDamage(int damage)
     {
         _health -= damage;
