@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -9,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public int moveCount = 0;
     public Tilemap movementGrid;
     public Tilemap blockedGrid;
+    public FightControl FightControl;
 
     private Vector2? movementDirection;
 
@@ -52,10 +50,21 @@ public class PlayerMovement : MonoBehaviour
         {
             if (direction != null)
             {
-                transform.position += (Vector3)direction;
-                moveCount--;
+                if (FightControl.IsAttackAgain(transform.position + (Vector3)direction))
+                {
+                    moveCount--;
+                    FightControl.OnMoved();
+                }
+                else
+                {
+                    transform.position += (Vector3)direction;
+                    moveCount--;
                 
-                // trigger animation here on move
+                    // trigger animation here on move
+                
+                    FightControl.OnMoved();    
+                }
+                
             }
         }
     }
@@ -66,6 +75,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3Int gridPos = movementGrid.WorldToCell(transform.position + (Vector3)direction);
 
+            
+            
             return !blockedGrid.HasTile(gridPos) && movementGrid.HasTile(gridPos);
         }
 
