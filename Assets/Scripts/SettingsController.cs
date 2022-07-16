@@ -30,6 +30,11 @@ public class SettingsController : MonoBehaviour
         
     }
 
+    public void CreditsButtonClick()
+    {
+        SceneManager.LoadScene("CreditsScene");
+    }
+
     public void BackToMenu()
     {
         SceneManager.LoadScene("MainMenu");
