@@ -374,7 +374,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1927208645742596853, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: wallGrid
+      value: 
+      objectReference: {fileID: 862428630}
     - target: {fileID: 3034257267571412779, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: wallGrid
+      value: 
+      objectReference: {fileID: 862428630}
+    - target: {fileID: 3137657163847034054, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: wallGrid
+      value: 
+      objectReference: {fileID: 862428630}
+    - target: {fileID: 3894096836566509845, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: wallGrid
+      value: 
+      objectReference: {fileID: 862428630}
+    - target: {fileID: 4065738977279153385, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
       propertyPath: wallGrid
       value: 
       objectReference: {fileID: 862428630}
