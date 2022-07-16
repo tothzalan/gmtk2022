@@ -4,6 +4,7 @@ using UnityEngine.Tilemaps;
 public class PlayerMovement : MonoBehaviour
 {
     public int moveCount = 0;
+    public float moveSpeed = 5;
     public Tilemap movementGrid;
     public Tilemap blockedGrid;
     public FightControl fightControl;
@@ -11,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public LevelComplete completeLevel;
 
     private Vector2? movementDirection;
+    
+    private bool _isMoving;
 
     private bool isButtonDown = false;
     // Update is called once per frame
@@ -40,8 +43,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (movementDirection != null)
         {
-            if(moveCount > 0)
+            if (moveCount > 0)
+            {   
                 OnMove(movementDirection);
+            }
             movementDirection = null;
         }
     }
@@ -60,12 +65,11 @@ public class PlayerMovement : MonoBehaviour
                 else
                 {
                     transform.position += (Vector3)direction;
-                
                     // trigger animation here on move
                 
                     fightControl.OnMove(); 
                     gatheringController.OnMove();
-                    completeLevel.OnMove();
+                    //completeLevel.OnMove();
                 }
                 
             }
