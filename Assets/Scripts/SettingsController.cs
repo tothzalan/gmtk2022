@@ -8,6 +8,7 @@ using TMPro;
 public class SettingsController : MonoBehaviour
 {
     public TMP_InputField UsernameField;
+    public Toggle Toggle;
 
     string[] adjs = new string[] {  "Amazing", "Awesome", "Blithesome", "Excellent", "Fabulous", "Fantastic", "Favorable", "Fortuitous", "Great", "Incredible", "Ineffable", "Mirthful", "Outstanding", "Perfect", "Propitious", "Remarkable", "Smart", "Spectacular",
                                     "Splendid", "Stellar", "Stupendous", "Super", "Ultimate", "Unbelievable", "Wondrous", "adaptable", "adventurous", "affable", "affectionate", "agreeable", "ambitious", "amiable", "amicable", "amusing", "brave", "bright", "broad-minded", "calm", "careful", "charming", "communicative", "compassionate", "conscientious", "considerate", "convivial", "courageous", "courteous", "creative", "decisive", "determined", "diligent", "diplomatic", "discreet", "dynamic", "easygoing", "emotional", "energetic", "enthusiastic", "exuberant", "fair-minded", "faithful", "fearless", "forceful", "frank", "friendly", "funny", "generous", "gentle", "good", "gregarious", "hard-working", "helpful", "honest", "humorous", "imaginative", "impartial", "independent", "intellectual", "intelligent", "intuitive", "inventive", "kind", "loving", "loyal", "modest", "neat", "nice", "optimistic", "passionate" };
@@ -16,6 +17,19 @@ public class SettingsController : MonoBehaviour
 
     void Start()
     {
+        if(Toggle) {
+            if(PlayerPrefs.HasKey("Fullscreen")) {
+                if(PlayerPrefs.GetInt("Fullscreen") == 0) {
+                   Toggle.isOn = false; 
+                } else {
+                    Toggle.isOn = true;
+                }
+            } else {
+                Toggle.isOn = false;
+                PlayerPrefs.SetInt("Fullscreen", 0);
+            }
+        }
+
         var rnd = new System.Random();
         if(UsernameField != null && PlayerPrefs.HasKey("Username")) {
             UsernameField.text = PlayerPrefs.GetString("Username");
@@ -30,6 +44,7 @@ public class SettingsController : MonoBehaviour
         
     }
 
+    // TODO: refactor CreditsButtonClick and BackToMenu to a unified scene changer
     public void CreditsButtonClick()
     {
         SceneManager.LoadScene("CreditsScene");
@@ -45,5 +60,8 @@ public class SettingsController : MonoBehaviour
         if(UsernameField.text.Length > 0) {
             PlayerPrefs.SetString("Username", UsernameField.text);
         }
+        Screen.fullScreen = Toggle.isOn;
+        Debug.Log(Toggle.isOn);
+        PlayerPrefs.SetInt("Fullscreen", Toggle.isOn ? 1 : 0);
     }
 }
