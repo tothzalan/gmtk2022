@@ -8,12 +8,10 @@ public class CreditsController : MonoBehaviour
 {
     public TMP_Text Credits;
 
-    private List<string> credits = new List<string>();
+    private List<string> credits = new List<string>() { "Süveges Zoltán", "Tóth Zalán", "Kaiser László"};
 
     void Start()
     {
-        credits.Add("Semmi :D");
-        credits.Add("Zoli :D");
         foreach(string val in credits)
         {
             Credits.text += $"{val}\n";

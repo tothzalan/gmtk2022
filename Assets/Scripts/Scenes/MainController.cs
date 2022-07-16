@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEditor;
 #endif
 
-public class MainScenController : MonoBehaviour
+public class MainController : MonoBehaviour
 {
     void Start()
     {
