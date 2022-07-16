@@ -51,14 +51,34 @@ public class FightControl : MonoBehaviour
     {
         // trigger animation
         var targetAttr = target.GetComponent<AttributeController>();
-        
-        targetAttr.OnHit(attributes.hitDamage);
-        
-        // trigger isDeath
+
+        if (targetAttr.OnHit(attributes.hitDamage))
+        {
+            if(isPlayer) // not player death
+                targetAttr.TriggerDeath(false); // TODO: Animation instead
+            else
+            {
+                attributes.TriggerDeath(true);
+                // Animation to kill player
+                // Trigger Game Over Screen
+            }
+
+            return; // Don't want to continue if death occur
+        }
         
         // return fire, trigger animation for it as well
-        
-        attributes.OnHit(targetAttr.hitDamage);
+
+        if (attributes.OnHit(targetAttr.hitDamage))
+        {
+            if(!isPlayer) // not player death
+                attributes.TriggerDeath(false); // TODO: Animation instead
+            else
+            {
+                targetAttr.TriggerDeath(true);
+                // Animation to kill player
+                // Trigger Game Over Screen
+            }
+        }
         
         // trigger isDeath()
     }
