@@ -36,7 +36,7 @@ public class IndicatorUpdater : MonoBehaviour
             return;
         }
         
-        if (IsEnemyAroundPosition(transform.position))
+        if (!wallGrid.HasTileAtPosition(transform.position) && IsEnemyAroundPosition(transform.position))
         {
             _renderer.sprite = attack;
             return;
