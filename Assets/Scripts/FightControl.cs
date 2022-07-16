@@ -54,8 +54,12 @@ public class FightControl : MonoBehaviour
         
         targetAttr.OnHit(attributes.hitDamage);
         
+        // trigger isDeath
+        
         // return fire, trigger animation for it as well
         
         attributes.OnHit(targetAttr.hitDamage);
+        
+        // trigger isDeath()
     }
 }

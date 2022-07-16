@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour
     public int moveCount = 0;
     public Tilemap movementGrid;
     public Tilemap blockedGrid;
-    public FightControl FightControl;
+    public FightControl fightControl;
+    public GatheringController gatheringController;
 
     private Vector2? movementDirection;
 
@@ -51,9 +52,9 @@ public class PlayerMovement : MonoBehaviour
             if (direction != null)
             {
                 moveCount--;
-                if (FightControl.IsEnemyAtDirection(direction))
+                if (fightControl.IsEnemyAtDirection(direction))
                 {
-                    FightControl.OnMoved();
+                    fightControl.OnMoved();
                 }
                 else
                 {
@@ -61,7 +62,8 @@ public class PlayerMovement : MonoBehaviour
                 
                     // trigger animation here on move
                 
-                    FightControl.OnMoved();    
+                    fightControl.OnMoved(); 
+                    gatheringController.OnMove();
                 }
                 
             }
