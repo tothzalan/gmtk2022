@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField]
     private int health;
+    [SerializeField]
     private int hitDamage;
 
     // Start is called before the first frame update
@@ -23,4 +25,5 @@ public class Player : MonoBehaviour
     {
         health -= damage;
     }
+
 }
