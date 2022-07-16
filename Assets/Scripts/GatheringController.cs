@@ -6,7 +6,6 @@ using UnityEngine;
 public class GatheringController : MonoBehaviour
 {
     public AttributeController attributes;
-    public LevelComplete LevelComplete;
 
     private bool hasKey = false;
 
@@ -45,8 +44,6 @@ public class GatheringController : MonoBehaviour
         {
             Destroy(gameObject);
             hasKey = true;
-
-            LevelComplete.OnKeyPickup();
         }
 
         if (gameObject.CompareTag("HealthPoint"))

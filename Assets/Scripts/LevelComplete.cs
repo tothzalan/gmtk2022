@@ -21,6 +21,12 @@ public class LevelComplete : MonoBehaviour
         _renderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
+    private void Update()
+    {
+        if (GatheringController.HasKey && _renderer.sprite != opened)
+            _renderer.sprite = opened;
+    }
+
     public void OnMove()
     {
         if (IsPlayerOnExit())
