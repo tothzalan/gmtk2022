@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class MainScenController : MonoBehaviour
 {
@@ -25,9 +28,10 @@ public class MainScenController : MonoBehaviour
 
     public void ExitGame()
     {
-        if(Application.isEditor)
+        #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
-        else
+        #else
             Application.Quit();
+        #endif
     }
 }
