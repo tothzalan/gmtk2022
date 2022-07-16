@@ -50,15 +50,14 @@ public class PlayerMovement : MonoBehaviour
         {
             if (direction != null)
             {
-                if (FightControl.IsAttackAgain(transform.position + (Vector3)direction))
+                moveCount--;
+                if (FightControl.IsEnemyAtDirection(direction))
                 {
-                    moveCount--;
                     FightControl.OnMoved();
                 }
                 else
                 {
                     transform.position += (Vector3)direction;
-                    moveCount--;
                 
                     // trigger animation here on move
                 
@@ -75,8 +74,6 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3Int gridPos = movementGrid.WorldToCell(transform.position + (Vector3)direction);
 
-            
-            
             return !blockedGrid.HasTile(gridPos) && movementGrid.HasTile(gridPos);
         }
 
