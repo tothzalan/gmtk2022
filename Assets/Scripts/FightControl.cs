@@ -10,7 +10,7 @@ public class FightControl : MonoBehaviour
 
     [FormerlySerializedAs("IsPlayer")] public bool isPlayer = true;
     
-    public void OnMoved()
+    public void OnMove()
     {
         var down = GetEnemyFromPlayer(new Vector2(0, -1)); 
         var up = GetEnemyFromPlayer(new Vector2(0, 1));
