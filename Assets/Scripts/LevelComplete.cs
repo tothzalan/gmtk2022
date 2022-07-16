@@ -38,11 +38,11 @@ public class LevelComplete : MonoBehaviour
                 return;
             }
 
-            HUD.WriteNoKey();
+            //HUD.WriteNoKey();
         }
         else
         {
-            HUD.HideAllMessages();
+            //HUD.HideAllMessages();
         }
     }
 

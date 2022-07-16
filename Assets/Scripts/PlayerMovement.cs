@@ -69,7 +69,7 @@ public class PlayerMovement : MonoBehaviour
                 
                     fightControl.OnMove(); 
                     gatheringController.OnMove();
-                    //completeLevel.OnMove();
+                    completeLevel.OnMove();
                 }
                 
             }
