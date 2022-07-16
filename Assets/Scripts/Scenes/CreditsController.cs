@@ -7,7 +7,7 @@ using System.IO;
 
 public class CreditsController : MonoBehaviour
 {
-    public TMP_Text Credits;
+    public TMP_Text CreditsBox;
     public TextAsset CreditsFile;
 
     void Start()
@@ -21,9 +21,7 @@ public class CreditsController : MonoBehaviour
             }
         }
         foreach(Credit credit in creditsList) {
-            Debug.Log(credit.ToString());
-
-            Credits.text += credit.ToString();
+            CreditsBox.text += credit.ToString();
         }
     }
 
@@ -32,8 +30,8 @@ public class CreditsController : MonoBehaviour
         
     }
 
-    public void BackToMenu()
+    public void GoBack()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("SettingsScene");
     }
 }
