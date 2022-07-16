@@ -9,6 +9,8 @@ public class CardFactory : MonoBehaviour
     private TextAsset _cardAdjsFile;
     [SerializeField]
     private TextAsset _cardNameFile;
+    [SerializeField]
+    private bool _show;
 
     private System.Random _rnd = new System.Random();
 
@@ -17,17 +19,20 @@ public class CardFactory : MonoBehaviour
 
     void Start()
     {
-        _cards = new List<Card>();
-        CardType[] types = new CardType[] { CardType.Defense, CardType.Offense, CardType.Balanced };
-        foreach(CardType type in types) {
-            string name = GenerateName();
-            int health = GenerateHealth(type);
-            int damage = GenerateDamage(type);
-            _cards.Add(new Card(name, type, health, damage));
+        if(_show) {
+            _cards = new List<Card>();
+            CardType[] types = new CardType[] { CardType.Defense, CardType.Offense, CardType.Balanced };
+            foreach(CardType type in types) {
+                string name = GenerateName();
+                int health = GenerateHealth(type);
+                int damage = GenerateDamage(type);
+                _cards.Add(new Card(name, type, health, damage));
+            }
+            foreach(Card card in _cards) {
+                Debug.Log(card.ToString());
+            }
         }
-        foreach(Card card in _cards) {
-            Debug.Log(card.ToString());
-        }
+
     }
 
     void Update()
