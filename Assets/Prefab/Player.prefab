@@ -433,10 +433,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7184198005000424092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be7b636f3a58de40bee6fc7d1990972, type: 3}
+  m_Script: {fileID: 11500000, guid: fdbcc7267e069664f8f32b2b05576390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attributes: {fileID: 7184198005000424093}
+  health: 0
+  hitDamage: 0
 --- !u!114 &6549138092386231698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0337b276d34f9d14d8956bd34160cab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attributes: {fileID: 7184198005000424093}
+  attributes: {fileID: 5955758129421524790}
   movementGrid: {fileID: 0}
   isPlayer: 1
 --- !u!114 &7184198005000424066
@@ -468,7 +469,7 @@ MonoBehaviour:
   movementGrid: {fileID: 0}
   blockedGrid: {fileID: 0}
   fightControl: {fileID: 6549138092386231698}
-  gatheringController: {fileID: 5955758129421524790}
+  gatheringController: {fileID: 7184198005000424093}
 --- !u!114 &7184198005000424093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,11 +479,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7184198005000424092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2b0ed9561b2ac34aad4e7c4cea24508, type: 3}
+  m_Script: {fileID: 11500000, guid: 2206c0fd0e469dd46af3d49aba556eff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  hitDamage: 0
+  attributes: {fileID: 5955758129421524790}
 --- !u!65 &1021143827554818297
 BoxCollider:
   m_ObjectHideFlags: 0
