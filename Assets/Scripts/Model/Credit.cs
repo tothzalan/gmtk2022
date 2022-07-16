@@ -6,8 +6,9 @@ public class Credit
 {
     string _name;
     string _role;
+#nullable enable
     string? _link;
-
+#nullable disable
     public Credit(string line)
     {
         string[] pieces = line.Split(',');

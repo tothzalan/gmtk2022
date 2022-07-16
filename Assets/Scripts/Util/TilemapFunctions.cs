@@ -8,9 +8,8 @@ namespace Util
         public static bool HasTileAtPosition(this Tilemap tilemap, Vector2 position)
         {
             Vector3Int vec = tilemap.WorldToCell(position);
-
+            
             return tilemap.HasTile(vec);
         }
-        
     }
 }
