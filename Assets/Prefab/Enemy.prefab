@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   hitDamage: 0
+  droppedItem: {fileID: 0}
 --- !u!61 &2268584212588694481
 BoxCollider2D:
   m_ObjectHideFlags: 0
