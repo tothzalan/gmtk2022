@@ -8,6 +8,7 @@ TagManager:
   - Key
   - HealthPoint
   - HealthPointDouble
+  - Misc
   layers:
   - Default
   - TransparentFX
@@ -50,4 +51,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 1588747107
+    locked: 0
+  - name: Indicator
+    uniqueID: 4147136023
     locked: 0
