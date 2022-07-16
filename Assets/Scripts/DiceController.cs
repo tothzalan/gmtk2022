@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
+using System.Collections;
 
 public class DiceController : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class DiceController : MonoBehaviour
     [SerializeField]
     public GameObject obj;
 
+    private SpriteRenderer _renderer;
+    private int _lastRolled;
+
     private bool _started = false;
 
     public void Update()
@@ -18,25 +22,36 @@ public class DiceController : MonoBehaviour
         if(Input.GetKey(KeyCode.Space) && !_started)
         {
             _started = true;
+            _renderer = obj.GetComponent<SpriteRenderer>();
 
-            var renderer = obj.GetComponent<SpriteRenderer>();
             obj.transform.localScale = new Vector2(0.2f, 0.2f);
-            var color = renderer.color;
+            var color = _renderer.color;
             color.a = 1.0f;
-            renderer.color = color;
-            for(int i = 0; i < 20; i++) {
-                int rolled = RollDice();
-                renderer.sprite = faces[rolled - 1];
+            _renderer.color = color;
+
+            List<int> rolls = new List<int>();
+            for(int i = 0; i < 10; i++) {
+                rolls.Add(RollDice());
             }
+            _lastRolled = rolls[rolls.Count - 1];
+            StartCoroutine(Rollin(rolls));
             _started = false;
-        } 
+            _renderer.sprite = faces[_lastRolled];
+        }
+    }
+
+    IEnumerator Rollin(List<int> rolls)
+    {
+        foreach(int roll in rolls)
+        {
+            _renderer.sprite = faces[roll];
+            yield return new WaitForSeconds(0.125f);
+        }
     }
 
     public int RollDice()
     {
         Random r = new Random();
-
-        // animation must be done by now
-        return r.Next(1, sideCount + 1);
+        return r.Next(0, sideCount);
     }
 }
