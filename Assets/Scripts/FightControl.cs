@@ -42,7 +42,7 @@ public class FightControl : MonoBehaviour
     {
         if (direction == null)
             return false;
-        var obj = Physics2D.Raycast((Vector2)(transform.position + direction), new Vector2(0, 1), 0.5f);
+        var obj = Physics2D.Raycast((Vector2)(transform.position + direction), new Vector2(0, 1), 0.2f);
 
         return obj.collider != null && obj.collider.gameObject.CompareTag(isPlayer ? "Enemy" : "Player");
     }
