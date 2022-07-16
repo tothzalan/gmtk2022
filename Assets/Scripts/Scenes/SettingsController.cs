@@ -44,15 +44,9 @@ public class SettingsController : MonoBehaviour
         
     }
 
-    // TODO: refactor CreditsButtonClick and BackToMenu to a unified scene changer
-    public void CreditsButtonClick()
+    public void ChangeScene(string scene)
     {
-        SceneManager.LoadScene("CreditsScene");
-    }
-
-    public void BackToMenu()
-    {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(scene);
     }
 
     public void SaveButtonClick()

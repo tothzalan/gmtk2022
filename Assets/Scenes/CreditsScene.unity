@@ -466,7 +466,7 @@ PrefabInstance:
       objectReference: {fileID: 1759836538}
     - target: {fileID: 7284404868499723877, guid: 6f7a648f8957afc46ac1deb44049eff4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: BackToMenu
+      value: GoBack
       objectReference: {fileID: 0}
     - target: {fileID: 7284404868499723877, guid: 6f7a648f8957afc46ac1deb44049eff4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -491,6 +491,7 @@ GameObject:
   - component: {fileID: 1759836536}
   - component: {fileID: 1759836535}
   - component: {fileID: 1759836538}
+  - component: {fileID: 1759836539}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -577,7 +578,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff75d1d9091df84bb4a1625a7eb624a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Credits: {fileID: 1827221822}
+  CreditsBox: {fileID: 1827221822}
+  CreditsFile: {fileID: 4900000, guid: 704b45956bcac524484bd4435695e4b2, type: 3}
+--- !u!114 &1759836539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759836534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1773297294
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +692,7 @@ GameObject:
   - component: {fileID: 1827221823}
   - component: {fileID: 1827221822}
   m_Layer: 5
-  m_Name: Credits
+  m_Name: CreditsBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

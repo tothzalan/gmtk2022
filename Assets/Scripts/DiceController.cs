@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using Random = System.Random;
 
 public class DiceController : MonoBehaviour
 {
     public int sideCount;
+    public List<Sprite> faces;
 
     public int RollDice()
     {
