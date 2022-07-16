@@ -15,6 +15,9 @@ public class Card : MonoBehaviour
         _name = name;
         _cardType = cardType;
     }
-    
-    
+
+    public void OnMouseDown()
+    {
+        
+    }
 }
