@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: -31950584089447662}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -676,6 +676,7 @@ MonoBehaviour:
   blockedGrid: {fileID: 0}
   fightControl: {fileID: 6549138092386231698}
   gatheringController: {fileID: 7184198005000424093}
+  completeLevel: {fileID: 0}
 --- !u!114 &7184198005000424093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,6 +690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attributes: {fileID: 5955758129421524790}
+  LevelComplete: {fileID: 0}
 --- !u!61 &-31950584089447662
 BoxCollider2D:
   m_ObjectHideFlags: 0
