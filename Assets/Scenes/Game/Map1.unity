@@ -438,7 +438,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1021143828987149592, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
 --- !u!1 &641575937
 GameObject:
@@ -539,7 +540,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3233,7 +3234,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3332,6 +3333,18 @@ PrefabInstance:
       propertyPath: movementGrid
       value: 
       objectReference: {fileID: 950083413}
+    - target: {fileID: 2268584212588694483, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.031772893
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694483, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.031772893
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694483, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9622642
+      objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694492, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_Name
       value: Enemy
