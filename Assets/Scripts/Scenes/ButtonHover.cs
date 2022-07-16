@@ -12,11 +12,6 @@ public class ButtonHover : MonoBehaviour
     {
         shit = gameObject.GetComponent<Image>();
         oldColor  = shit.color;
-        /*
-        Color newColor = oldColor;
-        newColor.a = 0.8f;
-        shit.color = newColor;
-        */
     }
 
     void Update()
