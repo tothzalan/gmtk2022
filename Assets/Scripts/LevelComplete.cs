@@ -49,7 +49,7 @@ public class LevelComplete : MonoBehaviour
 
     private bool IsPlayerOnExit()
     {
-        var rew = Physics2D.Raycast(transform.position, new Vector2(0, -1), 0.2f);
+        var rew = Physics2D.Raycast(new Vector2(transform.position.x - 0.5f, transform.position.y), new Vector2(0, 1), 0.2f);
 
         return rew.collider != null && rew.collider.gameObject.CompareTag("Player");
     }
