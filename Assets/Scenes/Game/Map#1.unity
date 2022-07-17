@@ -190,6 +190,10 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: droppedItem
+      value: 
+      objectReference: {fileID: 4748306771493890, guid: 2d4ab1cddefed114b9c05ed12c75fe43, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -2970,10 +2974,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: droppedItem
-      value: 
-      objectReference: {fileID: 4748306771493890, guid: 2d4ab1cddefed114b9c05ed12c75fe43, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -5679,7 +5679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694480, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12
+      value: -12.5
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694480, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5733,10 +5733,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: droppedItem
-      value: 
-      objectReference: {fileID: 4317680659018781475, guid: 297ae4592a1e55b458d9e3021f4cb49d, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
