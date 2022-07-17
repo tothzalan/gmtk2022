@@ -8,7 +8,7 @@ public class DontDestroyAudio : MonoBehaviour
     {
         GameObject[] musicObj = GameObject.FindGameObjectsWithTag("GameMusic");
         if(musicObj.Length > 1)
-            Destroy(this.gameObject);
+            Destroy(musicObj[0]);
         DontDestroyOnLoad(this.gameObject);
     }
 }

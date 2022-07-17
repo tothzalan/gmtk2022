@@ -184,16 +184,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: health
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: hitDamage
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4748366423164755785, guid: 3452727195e1de641a7a5e1b2ad2d08f, type: 3}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -2761,16 +2765,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: health
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: hitDamage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4748366423164755785, guid: 3452727195e1de641a7a5e1b2ad2d08f, type: 3}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -2842,16 +2850,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: health
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: hitDamage
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4748366423164755785, guid: 3452727195e1de641a7a5e1b2ad2d08f, type: 3}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -2933,6 +2945,10 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4748366423164755785, guid: 3452727195e1de641a7a5e1b2ad2d08f, type: 3}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -3015,16 +3031,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: health
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: hitDamage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4748366423164755785, guid: 3452727195e1de641a7a5e1b2ad2d08f, type: 3}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -3117,6 +3137,10 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4748366423164755785, guid: 3452727195e1de641a7a5e1b2ad2d08f, type: 3}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -3188,12 +3212,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: health
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: hitDamage
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -6503,6 +6531,10 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4748306771493890, guid: 2d4ab1cddefed114b9c05ed12c75fe43, type: 3}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: gameOverScreen
+      value: 
+      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
