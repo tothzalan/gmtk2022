@@ -6,6 +6,10 @@ using UnityEngine;
 public class GatheringController : MonoBehaviour
 {
     public AttributeController attributes;
+    public AudioClip keySound;
+    public AudioClip beerSound;
+    public AudioClip doubleSound;
+
 
     private bool hasKey = false;
 
@@ -44,12 +48,14 @@ public class GatheringController : MonoBehaviour
         {
             Destroy(gameObject);
             hasKey = true;
+            AudioSource.PlayClipAtPoint(keySound, transform.position);
         }
 
         if (gameObject.CompareTag("HealthPoint"))
         {
             Destroy(gameObject);
             attributes.HealthPickedUp(1);
+            AudioSource.PlayClipAtPoint(beerSound, transform.position);
             // TODO: Add health
         }
 
@@ -57,6 +63,7 @@ public class GatheringController : MonoBehaviour
         {
             Destroy(gameObject);
             attributes.HealthPickedUp(3);
+            AudioSource.PlayClipAtPoint(doubleSound, transform.position);
             // TODO: Add double health
         }
     }
