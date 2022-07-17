@@ -44,7 +44,6 @@ namespace Enemy
                 
                 OnMove(new Vector2(0, vertical));
             }
-            Thread.Sleep(1000);
         }
 
         private void OnMove(Vector2? direction)
