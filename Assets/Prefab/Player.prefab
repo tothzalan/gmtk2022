@@ -683,6 +683,7 @@ MonoBehaviour:
   fightControl: {fileID: 6549138092386231698}
   gatheringController: {fileID: 7184198005000424093}
   completeLevel: {fileID: 0}
+  walkSound: {fileID: 8300000, guid: fb5369accf9daab4fbf0dac9f21be124, type: 3}
 --- !u!114 &7184198005000424093
 MonoBehaviour:
   m_ObjectHideFlags: 0
