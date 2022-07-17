@@ -190,10 +190,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -282,10 +278,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -378,10 +370,6 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4317680659018781475, guid: 297ae4592a1e55b458d9e3021f4cb49d, type: 3}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -470,10 +458,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -562,10 +546,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -587,108 +567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56edeeb90aa9e884196d0547d8ae12b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &628257083
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_RootOrder
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 838497888533421968, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8604594473709691346, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-      propertyPath: m_Name
-      value: GameOver
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
---- !u!223 &628257084 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
-  m_PrefabInstance: {fileID: 628257083}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &895888868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -756,10 +634,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -788,10 +662,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5955758129421524790, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
-      propertyPath: gameOverScreen
+    - target: {fileID: 1927208645742596853, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: wallGrid
       value: 
-      objectReference: {fileID: 628257084}
+      objectReference: {fileID: 1083285148}
+    - target: {fileID: 3137657163847034054, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: wallGrid
+      value: 
+      objectReference: {fileID: 1083285148}
+    - target: {fileID: 3894096836566509845, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: wallGrid
+      value: 
+      objectReference: {fileID: 1083285148}
+    - target: {fileID: 4065738977279153385, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: wallGrid
+      value: 
+      objectReference: {fileID: 1083285148}
+    - target: {fileID: 5955758129421524790, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
       propertyPath: movementGrid
       value: 
@@ -7174,10 +7064,6 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4748306771493890, guid: 2d4ab1cddefed114b9c05ed12c75fe43, type: 3}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -7266,10 +7152,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -7362,10 +7244,6 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4317680659018781475, guid: 297ae4592a1e55b458d9e3021f4cb49d, type: 3}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -7454,10 +7332,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -7550,10 +7424,6 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4317680659018781475, guid: 297ae4592a1e55b458d9e3021f4cb49d, type: 3}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -7722,7 +7592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5908187025365041235, guid: b26f73a03b0e412ca3f4133ec8c3d162, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 5908187025365041235, guid: b26f73a03b0e412ca3f4133ec8c3d162, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7885,10 +7755,6 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4317680659018781475, guid: 297ae4592a1e55b458d9e3021f4cb49d, type: 3}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -7981,10 +7847,6 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4317680659018781475, guid: 297ae4592a1e55b458d9e3021f4cb49d, type: 3}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -8073,10 +7935,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -8169,10 +8027,6 @@ PrefabInstance:
       propertyPath: droppedItem
       value: 
       objectReference: {fileID: 4748306771493890, guid: 2d4ab1cddefed114b9c05ed12c75fe43, type: 3}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -8398,10 +8252,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
@@ -8490,10 +8340,6 @@ PrefabInstance:
       propertyPath: hitDamage
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: gameOverScreen
-      value: 
-      objectReference: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
     - target: {fileID: 8777467610400658522, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: blockedGrid
       value: 
