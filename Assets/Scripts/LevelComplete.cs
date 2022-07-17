@@ -11,7 +11,9 @@ public class LevelComplete : MonoBehaviour
     public string NextScene;
  
     public GatheringController GatheringController;
-    public HudController HUD;
+#nullable enable
+    public HudController? HUD;
+#nullable disable
     
     public Sprite opened;
 
@@ -39,11 +41,13 @@ public class LevelComplete : MonoBehaviour
                 return;
             }
 
-            HUD.WriteNoKey();
+            if(HUD != null)
+                HUD.WriteNoKey();
         }
         else
         {
-            HUD.HideNoKey();
+            if(HUD != null)
+                HUD.HideNoKey();
         }
     }
 
