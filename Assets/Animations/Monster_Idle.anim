@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Monster-Idle
+  m_Name: Monster_Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -47,24 +47,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-    pptrCurveMapping:
-    - {fileID: -1447829613, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
-    - {fileID: -992715027, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
-    - {fileID: -2120864012, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
-    - {fileID: -13087512, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
-    - {fileID: -2120864012, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
-    - {fileID: -992715027, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
-    - {fileID: -479870285, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
-    - {fileID: -992715027, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
-    - {fileID: -1366719457, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -82,7 +66,7 @@ AnimationClip:
     m_LoopBlendPositionXZ: 0
     m_KeepOriginalOrientation: 0
     m_KeepOriginalPositionY: 1
-    m_KeepOriginalPositionXZ: 0
+    m_KeepOriginalPositionXZ: 1
     m_HeightFromFeet: 0
     m_Mirror: 0
   m_EditorCurves: []

@@ -11,6 +11,14 @@ public class AttributeController : MonoBehaviour
     public int hitDamage;
 
     public GameObject droppedItem;
+
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = gameObject.GetComponent<Animator>();
+    }
+
     public void CardPicked(int health, int damage)
     {
         this.health = health;
@@ -33,7 +41,7 @@ public class AttributeController : MonoBehaviour
     public bool OnHit(int damage)
     {
         health -= damage;
-
+        animator.SetBool("IsHit", true);
         return IsDead();
     }
 
@@ -43,9 +51,19 @@ public class AttributeController : MonoBehaviour
         {
             if(droppedItem != null)
                 Instantiate(droppedItem, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            animator.SetBool("IsAlive", false);
         }
             
+    }
+
+    public void Remove()
+    {
+        Destroy(gameObject);
+    }
+
+    public void ResetHurtAnimation()
+    {
+        animator.SetBool("IsHit", false);
     }
 
     public bool IsDead()
