@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CreditsScene.unity
     guid: ec23417d54ca8d34caf716582b5aa764
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game/Map1.unity
     guid: 43a6e3271117b844f993d3917c8abf58
   - enabled: 1
@@ -38,7 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Map#6.unity
     guid: 9700d47aaf5848d41809fddf8dd4e120
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game/TestEverything.unity
     guid: c723f02d95f693248810e8fec4988903
   - enabled: 0
