@@ -10,8 +10,11 @@ public class PlayerMovement : MonoBehaviour
     public FightControl fightControl;
     public GatheringController gatheringController;
     public LevelComplete completeLevel;
+    public AudioClip walkSound;
 
     private Vector2? movementDirection;
+
+
     
     private bool _isMoving;
 
@@ -66,14 +69,15 @@ public class PlayerMovement : MonoBehaviour
         {
             if (direction != null)
             {
+
                 moveCount--;
                 if (fightControl.IsEnemyAtDirection(direction))
                 {
-                    //fightControl.OnMove();
                     fightControl.HitAgain();
                 }
                 else
                 {
+                    AudioSource.PlayClipAtPoint(walkSound, transform.position);
                     transform.position += (Vector3)direction;
                     // trigger animation here on move
                 
