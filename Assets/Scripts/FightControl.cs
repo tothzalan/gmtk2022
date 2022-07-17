@@ -26,6 +26,17 @@ public class FightControl : MonoBehaviour
         if(right != null)
             BeginFight(right);
     }
+
+    public void HitAgain()
+    {
+        RaycastHit2D[] objs = Physics2D.CircleCastAll(transform.position, 2.0f, new Vector2(0,0));
+        foreach(var obj in objs) {
+            if(obj.collider != null && obj.collider.gameObject.CompareTag(isPlayer ? "Enemy" : "Player"))
+            {
+                BeginFight(obj.collider.gameObject);
+            }
+        }
+    }
     
     [CanBeNull]
     private GameObject GetEnemyFromPlayer(Vector2 direction)
@@ -52,6 +63,7 @@ public class FightControl : MonoBehaviour
         // trigger animation
         var targetAttr = target.GetComponent<AttributeController>();
 
+        //Debug.Log(target);
         if (targetAttr.OnHit(attributes.hitDamage))
         {
             if(isPlayer) // not player death

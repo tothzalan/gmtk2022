@@ -69,7 +69,8 @@ public class PlayerMovement : MonoBehaviour
                 moveCount--;
                 if (fightControl.IsEnemyAtDirection(direction))
                 {
-                    fightControl.OnMove();
+                    //fightControl.OnMove();
+                    fightControl.HitAgain();
                 }
                 else
                 {
