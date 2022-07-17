@@ -8,7 +8,8 @@ using UnityEngine.Serialization;
 
 public class LevelComplete : MonoBehaviour
 {
-    public SceneAsset NextScene;
+    public string NextScene;
+ 
     public GatheringController GatheringController;
     public HudController HUD;
     
@@ -34,7 +35,7 @@ public class LevelComplete : MonoBehaviour
             if (GatheringController.HasKey)
             {
                 // TODO: effect addition, animation
-                SceneManager.LoadScene(NextScene.name);
+                SceneManager.LoadScene(NextScene);
                 return;
             }
 

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
-using System.Collections;
+using UnityEngine.UI;
 
 public class DiceController : MonoBehaviour
 {
@@ -9,55 +9,54 @@ public class DiceController : MonoBehaviour
     public int sideCount = 6;
     [SerializeField]
     public List<Sprite> faces;
-    [SerializeField]
-    public GameObject obj;
 
-    private SpriteRenderer _renderer;
-    private int _lastRolled;
+    public Image image;
+    private Animator _animator;
 
-    private bool _started = false;
 
-    public void RollAndAnimation()
+    private void Start()
     {
-        if(!_started) {
-            _started = true;
-            _renderer = obj.GetComponent<SpriteRenderer>();
-
-            obj.transform.localScale = new Vector2(0.2f, 0.2f);
-            var color = _renderer.color;
-            color.a = 1.0f;
-            _renderer.color = color;
-
-            List<int> rolls = new List<int>();
-            for(int i = 0; i < 10; i++) {
-                rolls.Add(RollDice());
-            }
-            _lastRolled = rolls[rolls.Count - 1];
-            StartCoroutine(Rollin(rolls));
-            _renderer.sprite = faces[_lastRolled];
-        }
+        _animator = gameObject.GetComponent<Animator>();
+        _animator.enabled = true;
     }
 
-    public void Update()
-    {
-        if(Input.GetKey(KeyCode.Space) && !_started)
-        {
-            RollAndAnimation();
-        }
-    }
+    // public void Update()
+    // {
+    //     if (_stopped)
+    //         return;
+    //     gameObject.transform.localScale = new Vector2(0.2f, 0.2f);
+    //     var color = image.color;
+    //     color.a = 1.0f;
+    //     image.color = color;
+    //
+    //     image.sprite = faces[RollDice() - 1];
+    // }
 
-    IEnumerator Rollin(List<int> rolls)
-    {
-        foreach(int roll in rolls)
-        {
-            _renderer.sprite = faces[roll];
-            yield return new WaitForSeconds(0.125f);
-        }
-    }
+    // IEnumerator Rollin()
+    // {
+    //     List<int> rolls = new List<int>();
+    //     for(int i = 0; i < 10; i++) {
+    //         rolls.Add(RollDice());
+    //     }
+    //     _lastRolled = rolls[rolls.Count - 1];
+    //     
+    //     foreach(int roll in rolls)
+    //     {
+    //         image.sprite = faces[roll];
+    //         _lastRolled = roll;
+    //         yield return new WaitForSeconds(0.125f);
+    //     }
+    // }
 
     public int RollDice()
     {
+        _animator.enabled = false;
+        
         Random r = new Random();
-        return r.Next(0, sideCount);
+        int value = r.Next(0, sideCount);
+
+        image.sprite = faces[value];
+        
+        return value + 1;
     }
 }
