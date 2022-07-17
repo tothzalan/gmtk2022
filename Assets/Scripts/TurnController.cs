@@ -24,13 +24,17 @@ public class TurnController : MonoBehaviour
         {
             // end of player turn
             PlayerTurn = false;
-            
+            _hud.HideTurnText();
             BeginEnemyTurn();
         }
 
         if (!PlayerTurn && EnemyMovements.Count == 0 || EnemyMovements.All(x => x.moveCount == 0))
         {
             // end of enemy turn
+
+            PlayerTurn = true;
+            _hud.HideTurnText();
+            BeginPlayerTurn();
         }
     }
 

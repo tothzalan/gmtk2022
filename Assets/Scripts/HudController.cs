@@ -1,3 +1,4 @@
+using System.Threading;
 using Hud;
 using TMPro;
 using UnityEngine;
@@ -73,37 +74,43 @@ public class HudController : MonoBehaviour
 
     public void HideTurnText()
     {
-        yourTurnText.enabled = false;
-        enemyTurnText.enabled = false;
+        yourTurnText.gameObject.SetActive(false);
+        enemyTurnText.gameObject.SetActive(false);
     }
 
     public void BeginPlayerTurn()
     {
         // show Message that it is your turn
         // show dice and wait for input to roll dice
-        yourTurnText.enabled = true;
-        dice.enabled = true;
+        yourTurnText.gameObject.SetActive(true);
+        dice.Animator.enabled = true;
+        dice.gameObject.SetActive(true);
+        _turnController.FinalizedRoll = false;
     }
 
     public void BeginEnemyTurn()
     {
         // rolls the dice automatically, tells the player that it is the enemy turn
         // let the dice roll for a moment
-        enemyTurnText.enabled = true;
-        dice.enabled = true;
-
+        enemyTurnText.gameObject.SetActive(true);
+        dice.gameObject.SetActive(true);
+        dice.Animator.enabled = true;
+        Thread.Sleep(500);
+        RollDiceEnemy();
     }
 
     public void RollDice()
     {
         var value  = dice.RollDice();
-        
-        
+
+        PlayerMovement.moveCount = value;
     }
 
     public void RollDiceEnemy()
     {
-        
+        var value  = dice.RollDice();
+
+        _turnController.EnemyMovements.ForEach(x => x.moveCount = value);
     }
     
     public void StartGame(int index = 0)

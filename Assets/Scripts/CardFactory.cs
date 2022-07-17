@@ -26,13 +26,14 @@ public class CardFactory : MonoBehaviour
     public TextMeshProUGUI balanceHealth;
     public TextMeshProUGUI balanceAttack;
 
-    private System.Random _rnd = new System.Random();
+    private System.Random _rnd;
 
     private List<Card> _cards;
     public List<Card> Cards { get { return _cards; } set { _cards = value; } }
 
     void Start()
     {
+        _rnd = new ();
         if(_show) {
             _cards = new List<Card>();
             CardType[] types = new CardType[] { CardType.Defense, CardType.Offense, CardType.Balanced };

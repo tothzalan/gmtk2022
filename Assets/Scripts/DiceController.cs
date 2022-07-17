@@ -12,8 +12,7 @@ public class DiceController : MonoBehaviour
 
     public Image image;
     private Animator _animator;
-
-
+    public Animator Animator => _animator;
     private void Start()
     {
         _animator = gameObject.GetComponent<Animator>();
@@ -50,7 +49,7 @@ public class DiceController : MonoBehaviour
 
     public int RollDice()
     {
-        _animator.enabled = false;
+        Animator.enabled = false;
         
         Random r = new Random();
         int value = r.Next(0, sideCount);
