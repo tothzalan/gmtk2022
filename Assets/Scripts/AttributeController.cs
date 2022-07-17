@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
 public class AttributeController : MonoBehaviour
@@ -11,7 +8,9 @@ public class AttributeController : MonoBehaviour
     public int hitDamage;
 
     public GameObject droppedItem;
-
+    public Canvas gameOverScreen;
+    
+    
     private Animator animator;
 
     private void Start()
@@ -52,6 +51,10 @@ public class AttributeController : MonoBehaviour
             if(droppedItem != null)
                 Instantiate(droppedItem, transform.position, Quaternion.identity);
             animator.SetBool("IsAlive", false);
+        }
+        else
+        {
+            Instantiate(gameOverScreen);
         }
             
     }

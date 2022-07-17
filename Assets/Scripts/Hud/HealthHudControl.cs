@@ -17,6 +17,10 @@ namespace Hud
 
         public void UpdateHealth(int health)
         {
+            if (_image == null)
+                return;
+            if (0 > health)
+                _image.sprite = healthBar[0];
             _image.sprite = healthBar[health];
         }
     }

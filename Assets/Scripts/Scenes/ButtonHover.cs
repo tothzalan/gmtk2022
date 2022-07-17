@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ButtonHover : MonoBehaviour
@@ -17,6 +18,11 @@ public class ButtonHover : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ToMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void MouseEnters()

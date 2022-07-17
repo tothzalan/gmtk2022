@@ -48,7 +48,7 @@ public class HudController : MonoBehaviour
     {
         healthImage.UpdateHealth(attributes.health);
         // TODO: Update health, Damage, key existence, move count
-        if (Input.GetButtonDown("Submit") && !_turnController.FinalizedRoll && _turnController.PlayerTurn)
+        if (Input.GetButtonDown("Submit") && !_turnController.FinalizedRoll && _turnController.PlayerTurn && !attributes.IsDead())
         {
             // Animation should end here
             _turnController.FinalizedRoll = true;
