@@ -56,15 +56,13 @@ public class GatheringController : MonoBehaviour
             Destroy(gameObject);
             attributes.HealthPickedUp(1);
             AudioSource.PlayClipAtPoint(beerSound, transform.position);
-            attributes.OnHit(-1);
         }
 
         if (gameObject.CompareTag("HealthPointDouble"))
         {
             Destroy(gameObject);
-            attributes.HealthPickedUp(3);
+            attributes.HealthPickedUp(2);
             AudioSource.PlayClipAtPoint(doubleSound, transform.position);
-            attributes.OnHit(-2);
         }
     }
 }
