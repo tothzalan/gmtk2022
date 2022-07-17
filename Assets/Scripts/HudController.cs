@@ -1,33 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
 using Hud;
 using TMPro;
-using TMPro.Examples;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class HudController : MonoBehaviour
 {
+    public bool StartWithCard = true;
     public AttributeController attributes;
     public PlayerMovement PlayerMovement;
-    
     public TurnController TurnController;
     public DiceController dice;
 
     public TextMeshProUGUI noKeyText;
     
     public HealthHudControl healthImage;
-
+    
     public TextMeshProUGUI yourTurnText;
     public TextMeshProUGUI enemyTurnText;
 
-    public Image Dice;
+    public Canvas CardSelection;
+
+    public GameObject charImage;
+    
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!StartWithCard)
+        {
+            StartGame();
+        }
+        else
+        {
+            CardSelection.enabled = true;
+        }
     }
+
+    
+
 
     // Update is called once per frame
     void Update()
@@ -49,12 +59,12 @@ public class HudController : MonoBehaviour
     
     public void WriteNoKey()
     {
-        noKeyText.enabled = true;
+        noKeyText.gameObject.SetActive(true);
     }
 
     public void HideNoKey()
     {
-        noKeyText.enabled = false;
+        noKeyText.gameObject.SetActive(false);
     }
 
     public void HideTurnText()
@@ -68,6 +78,7 @@ public class HudController : MonoBehaviour
         // show Message that it is your turn
         // show dice and wait for input to roll dice
         yourTurnText.enabled = true;
+        dice.enabled = true;
     }
 
     public void BeginEnemyTurn()
@@ -75,8 +86,8 @@ public class HudController : MonoBehaviour
         // rolls the dice automatically, tells the player that it is the enemy turn
         // let the dice roll for a moment
         enemyTurnText.enabled = true;
-        
-        
+        dice.enabled = true;
+
     }
 
     public void RollDice()
@@ -89,5 +100,23 @@ public class HudController : MonoBehaviour
     public void RollDiceEnemy()
     {
         
+    }
+    
+    public void StartGame(int index = 0)
+    {
+        if (!StartWithCard)
+        {
+            attributes.health = 5;
+            attributes.hitDamage = 5;
+        }
+        else
+        {
+            // read cards
+        }
+        charImage.SetActive(true);
+        healthImage.gameObject.SetActive(true);
+        CardSelection.enabled = false;
+        
+        BeginPlayerTurn();
     }
 }
