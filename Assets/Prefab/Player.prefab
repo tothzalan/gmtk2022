@@ -659,6 +659,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attributes: {fileID: 5955758129421524790}
   movementGrid: {fileID: 0}
+  swingSounds:
+  - {fileID: 8300000, guid: ed4171c3037a595408b2481ec080c27d, type: 3}
+  - {fileID: 8300000, guid: 7b56e84888f6e7f4f95e0c9f37d3f322, type: 3}
+  - {fileID: 8300000, guid: 91562e4a884365144ad1d6adbb79972a, type: 3}
   isPlayer: 1
 --- !u!114 &7184198005000424066
 MonoBehaviour:
@@ -692,6 +696,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attributes: {fileID: 5955758129421524790}
+  keySound: {fileID: 8300000, guid: 1b82a04396a4dd84fb1f61ae447cfa86, type: 3}
+  beerSound: {fileID: 8300000, guid: 6bfe888d3cf88e947863dd23ffbad531, type: 3}
+  doubleSound: {fileID: 8300000, guid: 4e299dd70e1f6e74c8aa31580637701f, type: 3}
 --- !u!61 &-31950584089447662
 BoxCollider2D:
   m_ObjectHideFlags: 0
