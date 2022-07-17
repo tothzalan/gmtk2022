@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Model;
+using TMPro;
 
 public class CardFactory : MonoBehaviour
 {
@@ -11,6 +12,19 @@ public class CardFactory : MonoBehaviour
     private TextAsset _cardNameFile;
     [SerializeField]
     private bool _show;
+
+
+    public TextMeshProUGUI defenseName;
+    public TextMeshProUGUI defenseHealth;
+    public TextMeshProUGUI defenseAttack;
+    
+    public TextMeshProUGUI offenseName;
+    public TextMeshProUGUI offenseHealth;
+    public TextMeshProUGUI offenseAttack;
+    
+    public TextMeshProUGUI balanceName;
+    public TextMeshProUGUI balanceHealth;
+    public TextMeshProUGUI balanceAttack;
 
     private System.Random _rnd = new System.Random();
 
@@ -28,12 +42,33 @@ public class CardFactory : MonoBehaviour
                 int damage = GenerateDamage(type);
                 _cards.Add(new Card(name, type, health, damage));
             }
-            foreach(Card card in _cards) {
-                Debug.Log(card.ToString());
-            }
+            SetDefenseCard(_cards[0]);
+            SetOffenseCard(_cards[1]);
+            SetBalanceCard(_cards[2]);
         }
-
     }
+
+    private void SetDefenseCard(Card card)
+    {
+        defenseName.text = card.Name;
+        defenseHealth.text = card.Health.ToString();
+        defenseAttack.text = card.Damage.ToString();
+    }
+    
+    private void SetOffenseCard(Card card)
+    {
+        offenseName.text = card.Name;
+        offenseHealth.text = card.Health.ToString();
+        offenseAttack.text = card.Damage.ToString();
+    }
+    
+    private void SetBalanceCard(Card card)
+    {
+        balanceName.text = card.Name;
+        balanceHealth.text = card.Health.ToString();
+        balanceAttack.text = card.Damage.ToString();
+    }
+    
 
     void Update()
     {

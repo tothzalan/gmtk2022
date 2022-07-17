@@ -18,9 +18,10 @@ public class HudController : MonoBehaviour
     public TextMeshProUGUI yourTurnText;
     public TextMeshProUGUI enemyTurnText;
 
-    public Canvas CardSelection;
+    public CardFactory CardSelection;
 
     public GameObject charImage;
+
     
     
     // Start is called before the first frame update
@@ -32,7 +33,8 @@ public class HudController : MonoBehaviour
         }
         else
         {
-            CardSelection.enabled = true;
+            CardSelection.gameObject.SetActive(true);
+            
         }
     }
 
@@ -112,11 +114,11 @@ public class HudController : MonoBehaviour
         else
         {
             // read cards
+            attributes.CardPicked(CardSelection.Cards[index].Health, CardSelection.Cards[index].Damage);
         }
         charImage.SetActive(true);
         healthImage.gameObject.SetActive(true);
-        CardSelection.enabled = false;
-        
+        CardSelection.gameObject.SetActive(false);
         BeginPlayerTurn();
     }
 }

@@ -18,6 +18,14 @@ public class Card
         _damage = damage;
     }
 
+    public string Name => _name;
+
+    public CardType CardType => _cardType;
+
+    public int Health => _health;
+
+    public int Damage => _damage;
+
     public override string ToString()
     {
         return $"{_name} {_cardType} {_health} {_damage}";
