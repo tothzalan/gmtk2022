@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &95073601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7946538009570078737, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+  m_PrefabInstance: {fileID: 1552808873}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &95712086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -226,6 +237,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1862899220834219321, guid: b26f73a03b0e412ca3f4133ec8c3d162, type: 3}
+      propertyPath: Light
+      value: 
+      objectReference: {fileID: 95073601}
     - target: {fileID: 1862899220834219321, guid: b26f73a03b0e412ca3f4133ec8c3d162, type: 3}
       propertyPath: PlayerMovement
       value: 
@@ -3090,6 +3105,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2044573157059097851, guid: c441e7f983e914d42a6aec36410579c4, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044573157059097851, guid: c441e7f983e914d42a6aec36410579c4, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 2044573157059097851, guid: c441e7f983e914d42a6aec36410579c4, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c441e7f983e914d42a6aec36410579c4, type: 3}
 --- !u!1001 &882757857
@@ -5871,6 +5898,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 99158902}
     - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
+      propertyPath: NextScene
+      value: Map#2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
       propertyPath: GatheringController
       value: 
       objectReference: {fileID: 1552808876}
@@ -6078,6 +6109,10 @@ PrefabInstance:
       propertyPath: wallGrid
       value: 
       objectReference: {fileID: 947199996}
+    - target: {fileID: 3490838561761547498, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: m_Name
+      value: Light2D
+      objectReference: {fileID: 0}
     - target: {fileID: 3894096836566509845, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
       propertyPath: wallGrid
       value: 
