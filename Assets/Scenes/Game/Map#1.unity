@@ -5881,6 +5881,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 99158902}
     - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
+      propertyPath: NextScene
+      value: Map#2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
       propertyPath: GatheringController
       value: 
       objectReference: {fileID: 1552808876}
