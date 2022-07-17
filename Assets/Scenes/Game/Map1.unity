@@ -398,6 +398,14 @@ PrefabInstance:
       propertyPath: wallGrid
       value: 
       objectReference: {fileID: 862428630}
+    - target: {fileID: 5955758129421524790, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: health
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955758129421524790, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: hitDamage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
       propertyPath: movementGrid
       value: 
@@ -534,6 +542,31 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!1 &643036808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2268584212588694492, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+  m_PrefabInstance: {fileID: 2268584212264574762}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &643036814
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643036808}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e91ea8863ffea5c40b7644945ed0751d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &862428627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,6 +3325,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694480, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694480, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694480, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5
       objectReference: {fileID: 0}
@@ -3331,21 +3372,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694481, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694481, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.43
+      objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694482, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: movementGrid
       value: 
       objectReference: {fileID: 950083413}
     - target: {fileID: 2268584212588694483, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1447829613, guid: 10ded56f44503494c8be4207e30166e9, type: 3}
+    - target: {fileID: 2268584212588694483, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_Color.b
-      value: 0.031772893
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694483, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_Color.g
-      value: 0.031772893
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694483, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_Color.r
-      value: 0.9622642
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2268584212588694492, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_Name
@@ -3354,6 +3407,10 @@ PrefabInstance:
     - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: health
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694493, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: hitDamage
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
