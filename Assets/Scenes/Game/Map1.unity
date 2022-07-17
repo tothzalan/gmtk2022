@@ -410,6 +410,22 @@ PrefabInstance:
       propertyPath: movementGrid
       value: 
       objectReference: {fileID: 950083413}
+    - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: swingSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: swingSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d0f97535812f5a34b91fac34d2714128, type: 3}
+    - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: swingSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f903b2bcb9dae24ab0cfc38f9b8a4eb, type: 3}
+    - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
+      propertyPath: swingSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a83c0c8d441035448a3063af27a8c3e, type: 3}
     - target: {fileID: 7184198005000424064, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
       propertyPath: m_RootOrder
       value: 3

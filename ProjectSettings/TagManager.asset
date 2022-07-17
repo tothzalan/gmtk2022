@@ -9,6 +9,7 @@ TagManager:
   - HealthPoint
   - HealthPointDouble
   - Misc
+  - GameMusic
   layers:
   - Default
   - TransparentFX
