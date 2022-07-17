@@ -237,8 +237,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
       propertyPath: NextScene
-      value: 
-      objectReference: {fileID: 102900000, guid: a28d857f49816b2439fbba5bb8044862, type: 3}
+      value: Tutorial2
+      objectReference: {fileID: 0}
     - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
       propertyPath: GatheringController
       value: 
