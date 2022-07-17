@@ -181,7 +181,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Great looking menu
+  m_text: 'Dice Dungeon
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 074c4d3a4ce87f34183aa79682701c72, type: 2}
   m_sharedMaterial: {fileID: -158223292428953938, guid: 074c4d3a4ce87f34183aa79682701c72, type: 2}
