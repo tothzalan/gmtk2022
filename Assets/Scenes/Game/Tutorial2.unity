@@ -571,6 +571,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2268584212588694482, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
+      propertyPath: movementGrid
+      value: 
+      objectReference: {fileID: 1975033318}
     - target: {fileID: 2268584212588694492, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -643,6 +647,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
+      propertyPath: HUD
+      value: 
+      objectReference: {fileID: 7505522049489627647, guid: b26f73a03b0e412ca3f4133ec8c3d162, type: 3}
     - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
       propertyPath: NextScene
       value: Map1

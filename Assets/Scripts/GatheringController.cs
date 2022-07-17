@@ -56,7 +56,7 @@ public class GatheringController : MonoBehaviour
         if (gameObject.CompareTag("HealthPointDouble"))
         {
             Destroy(gameObject);
-            attributes.HealthPickedUp(2);
+            attributes.HealthPickedUp(3);
             // TODO: Add double health
         }
     }
