@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attributes: {fileID: 2268584212588694493}
   movementGrid: {fileID: 0}
-  isPlayer: 1
+  isPlayer: 0
 --- !u!114 &2268584212588694493
 MonoBehaviour:
   m_ObjectHideFlags: 0

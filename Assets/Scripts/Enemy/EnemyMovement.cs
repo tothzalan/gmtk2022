@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using Random = System.Random;
+using System.Collections;
+using System.Threading;
 
 namespace Enemy
 {
@@ -12,36 +14,39 @@ namespace Enemy
         public Tilemap blockedGrid;
         public Tilemap movementGrid;
 
-        private Random _random = new ();
-        // Start is called before the first frame update
+        private Random _random;
+
+        private Animator animator;
+
         void Start()
         {
-        
+            _random = new Random();
+            animator = GetComponent<Animator>();
         }
 
         // Update is called once per frame
-        void FixedUpdate()
+        void Update()
         {
             if (moveCount == 0)
                 return;
 
-            if (_random.Next(2) == 0)
+            if (_random.Next() > (int.MaxValue / 2))
             {
                 float horizontal;
-                horizontal = _random.Next(2) == 0 ? 1 : 0;
+                horizontal = _random.Next(2) == 0 ? 1 : -1;
                 
                 OnMove(new Vector2(horizontal, 0));
             }
             else
             {
                 float vertical;
-                vertical = _random.Next(2) == 0 ? 1 : 0;
+                vertical = _random.Next(2) == 0 ? 1 : -1;
                 
-                OnMove(new Vector2(vertical, 0));
+                OnMove(new Vector2(0, vertical));
             }
-               
+            Thread.Sleep(1000);
         }
-        
+
         private void OnMove(Vector2? direction)
         {
             if (CanMove(direction))
@@ -56,8 +61,6 @@ namespace Enemy
                     else
                     {
                         transform.position += (Vector3)direction;
-                
-                        // trigger animation here on move
                 
                         fightControl.OnMove(); 
                     }
