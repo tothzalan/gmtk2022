@@ -101,7 +101,7 @@ MonoBehaviour:
   movementControl: {fileID: 7184198005000424066}
   arrow: {fileID: 21300000, guid: 1d3e734dc384dfe47999d5c2979c695d, type: 3}
   attack: {fileID: 21300000, guid: 50bf6b4404161274ab0e9cefb97a5e71, type: 3}
-  collect: {fileID: 21300000, guid: d8653e3160e49e545b3bfba29fc40e41, type: 3}
+  collect: {fileID: 21300000, guid: 4da6f4dfa4754804fa65a732d5ad5a9a, type: 3}
 --- !u!1 &3231744513000886981
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +431,7 @@ MonoBehaviour:
   movementControl: {fileID: 7184198005000424066}
   arrow: {fileID: 21300000, guid: 603d9cc0ece2f124a81fb193551a194d, type: 3}
   attack: {fileID: 21300000, guid: 50bf6b4404161274ab0e9cefb97a5e71, type: 3}
-  collect: {fileID: 21300000, guid: d8653e3160e49e545b3bfba29fc40e41, type: 3}
+  collect: {fileID: 21300000, guid: 4da6f4dfa4754804fa65a732d5ad5a9a, type: 3}
 --- !u!1 &6712978947456256706
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +533,7 @@ MonoBehaviour:
   movementControl: {fileID: 7184198005000424066}
   arrow: {fileID: 21300000, guid: d73ef604ebb76ae4e834ad08434e06e6, type: 3}
   attack: {fileID: 21300000, guid: 50bf6b4404161274ab0e9cefb97a5e71, type: 3}
-  collect: {fileID: 21300000, guid: d8653e3160e49e545b3bfba29fc40e41, type: 3}
+  collect: {fileID: 21300000, guid: 4da6f4dfa4754804fa65a732d5ad5a9a, type: 3}
 --- !u!1 &7184198005000424092
 GameObject:
   m_ObjectHideFlags: 0
@@ -645,6 +645,7 @@ MonoBehaviour:
   health: 0
   hitDamage: 0
   droppedItem: {fileID: 0}
+  gameOverScreen: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
 --- !u!114 &6549138092386231698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -847,4 +848,4 @@ MonoBehaviour:
   movementControl: {fileID: 7184198005000424066}
   arrow: {fileID: 21300000, guid: 8758db791d79e2646822a31253be075e, type: 3}
   attack: {fileID: 21300000, guid: 50bf6b4404161274ab0e9cefb97a5e71, type: 3}
-  collect: {fileID: 21300000, guid: d8653e3160e49e545b3bfba29fc40e41, type: 3}
+  collect: {fileID: 21300000, guid: 4da6f4dfa4754804fa65a732d5ad5a9a, type: 3}

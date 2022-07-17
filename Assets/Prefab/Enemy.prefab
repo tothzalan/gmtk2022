@@ -123,6 +123,7 @@ MonoBehaviour:
   health: 0
   hitDamage: 0
   droppedItem: {fileID: 0}
+  gameOverScreen: {fileID: 3235903791548925668, guid: 188b59a8e0e090148a3dd39053a2d703, type: 3}
 --- !u!114 &8777467610400658522
 MonoBehaviour:
   m_ObjectHideFlags: 0
