@@ -2,13 +2,24 @@ using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.Tilemaps;
+using Random = System.Random;
 
 public class FightControl : MonoBehaviour
 {
     public AttributeController attributes;
     public Tilemap movementGrid;
+#nullable enable
+    public AudioClip[]? swingSounds;
+#nullable disable
+
+    private Random rnd;
 
     [FormerlySerializedAs("IsPlayer")] public bool isPlayer = true;
+
+    void Start()
+    {
+        rnd = new Random();
+    }
     
     public void OnMove()
     {
@@ -60,10 +71,12 @@ public class FightControl : MonoBehaviour
 
     public void BeginFight(GameObject target)
     {
+
         // trigger animation
         var targetAttr = target.GetComponent<AttributeController>();
 
-        //Debug.Log(target);
+        if(swingSounds != null)
+            AudioSource.PlayClipAtPoint(swingSounds[rnd.Next(0, swingSounds.Length)], transform.position);
         if (targetAttr.OnHit(attributes.hitDamage))
         {
             if(isPlayer) // not player death
@@ -79,7 +92,8 @@ public class FightControl : MonoBehaviour
         }
         
         // return fire, trigger animation for it as well
-
+        if(swingSounds != null)
+            AudioSource.PlayClipAtPoint(swingSounds[rnd.Next(0, swingSounds.Length)], transform.position);
         if (attributes.OnHit(targetAttr.hitDamage))
         {
             if(!isPlayer) // not player death
