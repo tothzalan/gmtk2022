@@ -17,10 +17,9 @@ public class DiceController : MonoBehaviour
 
     private bool _started = false;
 
-    public void Update()
+    public void RollAndAnimation()
     {
-        if(Input.GetKey(KeyCode.Space) && !_started)
-        {
+        if(!_started) {
             _started = true;
             _renderer = obj.GetComponent<SpriteRenderer>();
 
@@ -35,8 +34,15 @@ public class DiceController : MonoBehaviour
             }
             _lastRolled = rolls[rolls.Count - 1];
             StartCoroutine(Rollin(rolls));
-            _started = false;
             _renderer.sprite = faces[_lastRolled];
+        }
+    }
+
+    public void Update()
+    {
+        if(Input.GetKey(KeyCode.Space) && !_started)
+        {
+            RollAndAnimation();
         }
     }
 
