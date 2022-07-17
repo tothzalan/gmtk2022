@@ -103,6 +103,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attributes: {fileID: 2268584212588694493}
   movementGrid: {fileID: 0}
+  swingSounds:
+  - {fileID: 8300000, guid: ed4171c3037a595408b2481ec080c27d, type: 3}
+  - {fileID: 8300000, guid: 7b56e84888f6e7f4f95e0c9f37d3f322, type: 3}
+  - {fileID: 8300000, guid: 91562e4a884365144ad1d6adbb79972a, type: 3}
   isPlayer: 0
 --- !u!114 &2268584212588694493
 MonoBehaviour:
