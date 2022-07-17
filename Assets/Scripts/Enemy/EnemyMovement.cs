@@ -16,10 +16,14 @@ namespace Enemy
 
         private Random _random;
 
+        private AttributeController _attributeController;
         private Animator animator;
+
+        public AttributeController Attributes => _attributeController;
 
         void Start()
         {
+            _attributeController = gameObject.GetComponent<AttributeController>();
             _random = new Random();
             animator = GetComponent<Animator>();
         }

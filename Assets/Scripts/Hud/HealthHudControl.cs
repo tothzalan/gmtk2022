@@ -10,7 +10,7 @@ namespace Hud
 
         private Image _image;
     
-        private void Start()
+        void Start()
         {
             _image = gameObject.GetComponent<Image>();
         }
