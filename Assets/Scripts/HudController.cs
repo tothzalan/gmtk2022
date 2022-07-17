@@ -8,7 +8,7 @@ public class HudController : MonoBehaviour
     public bool StartWithCard = true;
     public AttributeController attributes;
     public PlayerMovement PlayerMovement;
-    public TurnController TurnController;
+    
     public DiceController dice;
 
     public TextMeshProUGUI noKeyText;
@@ -22,11 +22,13 @@ public class HudController : MonoBehaviour
 
     public GameObject charImage;
 
-    
+    private TurnController _turnController;
     
     // Start is called before the first frame update
     void Start()
     {
+        _turnController = gameObject.GetComponent<TurnController>();
+        
         if (!StartWithCard)
         {
             StartGame();
@@ -46,10 +48,10 @@ public class HudController : MonoBehaviour
     {
         healthImage.UpdateHealth(attributes.health);
         // TODO: Update health, Damage, key existence, move count
-        if (Input.GetButtonDown("Submit") && !TurnController.FinalizedRoll && TurnController.PlayerTurn)
+        if (Input.GetButtonDown("Submit") && !_turnController.FinalizedRoll && _turnController.PlayerTurn)
         {
             // Animation should end here
-            TurnController.FinalizedRoll = true;
+            _turnController.FinalizedRoll = true;
             RollDice();
         }
     }

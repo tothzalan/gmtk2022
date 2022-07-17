@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 1452696113991282597}
   - component: {fileID: 6173518978569220979}
   - component: {fileID: 7505522049489627647}
+  - component: {fileID: 1862899220834219321}
   m_Layer: 5
   m_Name: Hud
   m_TagString: Untagged
@@ -445,7 +446,6 @@ MonoBehaviour:
   StartWithCard: 1
   attributes: {fileID: 0}
   PlayerMovement: {fileID: 0}
-  TurnController: {fileID: 0}
   dice: {fileID: 5994351357118895314}
   noKeyText: {fileID: 4912021885812468261}
   healthImage: {fileID: 1377926238284084269}
@@ -453,6 +453,23 @@ MonoBehaviour:
   enemyTurnText: {fileID: 620824380698127982}
   CardSelection: {fileID: 6124772249683758382}
   charImage: {fileID: 8947874060960302709}
+--- !u!114 &1862899220834219321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972642862265893379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1bc0b2acf83ac4a807285b2a66dd20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerMovement: {fileID: 0}
+  EnemyMovements: []
+  PlayerTurn: 1
+  FinalizedRoll: 0
+  Hud: {fileID: 0}
 --- !u!1 &2377922543099324843
 GameObject:
   m_ObjectHideFlags: 0
