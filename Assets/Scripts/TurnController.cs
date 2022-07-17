@@ -54,7 +54,7 @@ public class TurnController : MonoBehaviour
 
         int value = _hud.dice.RollDice();
         
-        EnemyMovements.ForEach(x => x.moveCount = value);
+        EnemyMovements.ForEach(x => x.moveCount = x.Attributes.IsDead() ? 0 : value);
     }
 
     
