@@ -3,6 +3,7 @@ using Hud;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class HudController : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class HudController : MonoBehaviour
     public TextMeshProUGUI noKeyText;
     
     public HealthHudControl healthImage;
+    public TextMeshProUGUI DamageController;
+    public Image HasKeyImage;
+    public TextMeshProUGUI RemainingSteps;
     
     public TextMeshProUGUI yourTurnText;
     public TextMeshProUGUI enemyTurnText;
@@ -47,6 +51,7 @@ public class HudController : MonoBehaviour
     void Update()
     {
         healthImage.UpdateHealth(attributes.health);
+        DamageController.text = attributes.hitDamage + " Damage";
         // TODO: Update health, Damage, key existence, move count
         if (Input.GetButtonDown("Submit") && !_turnController.FinalizedRoll && _turnController.PlayerTurn && !attributes.IsDead())
         {
@@ -54,6 +59,15 @@ public class HudController : MonoBehaviour
             _turnController.FinalizedRoll = true;
             HideTurnText();
             RollDice();
+        }
+        HasKeyImage.color = !PlayerMovement.gatheringController.HasKey ? new Color(0, 0, 0) : new Color(255, 255, 255);
+        RemainingSteps.text = PlayerMovement.moveCount + " Steps";
+
+        if (attributes.IsDead())
+        {
+            dice.gameObject.SetActive(false);
+            HideTurnText();
+            HideNoKey();
         }
     }
 
@@ -95,7 +109,6 @@ public class HudController : MonoBehaviour
         enemyTurnText.gameObject.SetActive(true);
         dice.gameObject.SetActive(true);
         //dice.SetAnimatorEnabled(true);
-        Thread.Sleep(500);
         RollDiceEnemy();
     }
 
@@ -128,6 +141,9 @@ public class HudController : MonoBehaviour
         charImage.SetActive(true);
         healthImage.gameObject.SetActive(true);
         CardSelection.gameObject.SetActive(false);
+        DamageController.gameObject.SetActive(true);
+        HasKeyImage.gameObject.SetActive(true);
+        RemainingSteps.gameObject.SetActive(true);
         BeginPlayerTurn();
     }
 }

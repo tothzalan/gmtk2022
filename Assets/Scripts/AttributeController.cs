@@ -54,6 +54,7 @@ public class AttributeController : MonoBehaviour
         }
         else
         {
+            animator.SetBool("IsAlive", false);
             Instantiate(gameOverScreen);
         }
             
@@ -66,7 +67,10 @@ public class AttributeController : MonoBehaviour
 
     public void ResetHurtAnimation()
     {
-        animator.SetBool("IsHit", false);
+        if(IsDead())
+            animator.SetBool("IsAlive", false);
+        else
+            animator.SetBool("IsHit", false);
     }
 
     public bool IsDead()

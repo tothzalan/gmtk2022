@@ -20,7 +20,10 @@ namespace Hud
             if (_image == null)
                 return;
             if (0 > health)
+            {
                 _image.sprite = healthBar[0];
+                return;
+            }
             _image.sprite = healthBar[health];
         }
     }
