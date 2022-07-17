@@ -26,6 +26,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (horizontalMovement != 0 && !isButtonDown)
         {
+            var renderer = gameObject.GetComponent<SpriteRenderer>();
+            if (horizontalMovement == -1)
+            {
+                renderer.flipX = true;
+            }
+            else
+            {
+                renderer.flipX = false;
+            }
             movementDirection = new Vector2(horizontalMovement, 0);
             isButtonDown = true;
         }
