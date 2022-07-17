@@ -37,7 +37,6 @@ public class HudController : MonoBehaviour
         else
         {
             CardSelection.gameObject.SetActive(true);
-            
         }
     }
 
@@ -53,6 +52,7 @@ public class HudController : MonoBehaviour
         {
             // Animation should end here
             _turnController.FinalizedRoll = true;
+            HideTurnText();
             RollDice();
         }
     }
@@ -83,7 +83,7 @@ public class HudController : MonoBehaviour
         // show Message that it is your turn
         // show dice and wait for input to roll dice
         yourTurnText.gameObject.SetActive(true);
-        dice.Animator.enabled = true;
+        //dice.SetAnimatorEnabled(true);
         dice.gameObject.SetActive(true);
         _turnController.FinalizedRoll = false;
     }
@@ -94,7 +94,7 @@ public class HudController : MonoBehaviour
         // let the dice roll for a moment
         enemyTurnText.gameObject.SetActive(true);
         dice.gameObject.SetActive(true);
-        dice.Animator.enabled = true;
+        //dice.SetAnimatorEnabled(true);
         Thread.Sleep(500);
         RollDiceEnemy();
     }
