@@ -571,28 +571,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694482, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-<<<<<<< Updated upstream
-      propertyPath: movementGrid
-      value: 
-      objectReference: {fileID: 1975033318}
-=======
-      propertyPath: swingSounds.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2268584212588694482, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: swingSounds.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: d0f97535812f5a34b91fac34d2714128, type: 3}
-    - target: {fileID: 2268584212588694482, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: swingSounds.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8f903b2bcb9dae24ab0cfc38f9b8a4eb, type: 3}
-    - target: {fileID: 2268584212588694482, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
-      propertyPath: swingSounds.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 7a83c0c8d441035448a3063af27a8c3e, type: 3}
->>>>>>> Stashed changes
     - target: {fileID: 2268584212588694492, guid: 6bffe10e078cf314eab32dde13c036d3, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -666,10 +644,6 @@ PrefabInstance:
       value: Exit
       objectReference: {fileID: 0}
     - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
-      propertyPath: HUD
-      value: 
-      objectReference: {fileID: 7505522049489627647, guid: b26f73a03b0e412ca3f4133ec8c3d162, type: 3}
-    - target: {fileID: 8644647951539571476, guid: 7e19f83d9c5d32c47bd3972712e76f5a, type: 3}
       propertyPath: NextScene
       value: Map1
       objectReference: {fileID: 0}
@@ -706,22 +680,6 @@ PrefabInstance:
       propertyPath: movementGrid
       value: 
       objectReference: {fileID: 1975033318}
-    - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
-      propertyPath: swingSounds.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
-      propertyPath: swingSounds.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: d0f97535812f5a34b91fac34d2714128, type: 3}
-    - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
-      propertyPath: swingSounds.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 8f903b2bcb9dae24ab0cfc38f9b8a4eb, type: 3}
-    - target: {fileID: 6549138092386231698, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
-      propertyPath: swingSounds.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 7a83c0c8d441035448a3063af27a8c3e, type: 3}
     - target: {fileID: 7184198005000424064, guid: 312e589632d8daf4ebbd9cd7de46f912, type: 3}
       propertyPath: m_RootOrder
       value: 4
