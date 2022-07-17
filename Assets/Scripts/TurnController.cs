@@ -20,15 +20,17 @@ public class TurnController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerMovement.moveCount == 0 && PlayerTurn)
+        if (PlayerMovement.moveCount == 0 && PlayerTurn && FinalizedRoll)
         {
             // end of player turn
             PlayerTurn = false;
             _hud.HideTurnText();
-            BeginEnemyTurn();
+            if(EnemyMovements.Count == 0)
+                BeginPlayerTurn();
+            else
+                BeginEnemyTurn();
         }
-
-        if (!PlayerTurn && EnemyMovements.Count == 0 || EnemyMovements.All(x => x.moveCount == 0))
+        else if (!PlayerTurn && (EnemyMovements.Count == 0 || EnemyMovements.All(x => x.moveCount == 0)))
         {
             // end of enemy turn
 
@@ -41,11 +43,13 @@ public class TurnController : MonoBehaviour
     private void BeginPlayerTurn()
     {
         FinalizedRoll = false;
+        _hud.HideTurnText();
         _hud.BeginPlayerTurn();
     }
 
     private void BeginEnemyTurn()
     {
+        _hud.HideTurnText();
         _hud.BeginEnemyTurn();
 
         int value = _hud.dice.RollDice();
